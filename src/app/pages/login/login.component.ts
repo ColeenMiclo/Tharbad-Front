@@ -23,6 +23,6 @@ export class LoginComponent {
         this.router.navigate(['/dashboard']);
       },
       error: (err) => alert('La connexion a échoué. Veuillez vérifier vos informations')
-    });
+   });
   }
 }
