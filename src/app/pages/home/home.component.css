@@ -1,0 +1,71 @@
+
+/* section hero */
+
+.section-hero {
+    width: 100%;
+    display: flex;
+}
+
+.hero-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    background-color: #6A9A56;
+    color: #FCFCFC;
+    gap: 2rem;
+}
+
+.image-hero {
+    width: 50%;
+}
+
+/* section games */
+
+.section-game-collection{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section where to play */
+
+.section-where-to-play{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.where-to-play-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards-towns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* section about */
+
+.section-about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;;
+}
+.about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
