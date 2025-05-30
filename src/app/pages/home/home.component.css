@@ -30,6 +30,23 @@
     display: flex;
     flex-direction: column;
 }
+.filter-options{
+    gap: 2rem;
+    display: flex;
+}
+
+.filter-icon{
+    background-color: #DEEED8;
+    color: #0A140F;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+}
+.filter-icon:hover{
+    background-color: #84C26B;
+    color: #0A140F;
+}
 
 /* section where to play */
 
