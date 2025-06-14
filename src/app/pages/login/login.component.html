@@ -1,5 +1,26 @@
-<form (ngSubmit)="onSubmit()">
-    <input [(ngModel)]="email" name="email" placeholder="Email" required/>
-    <input [(ngModel)]="password" name="password" type="password" placeholder="Mot de passe" required/>
-    <button type="submit">Login</button>
-</form>
+<div class="page-wrapper">
+    <div class="main-wrapper">
+        <div class="section-login display-flex">
+            <img src="assets/images/login-illustration.jpg" alt="image de connexion" class="login-illustration">
+            <div class="login-content display-flex">
+                <h1 class="title-login">Reprenez votre aventure ludique !</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-content display-flex">
+                        <label class="label-form">Adresse Email</label>
+                        <input [(ngModel)]="email" name="email" placeholder="jeux.societe@email.fr" required/>
+                    </div>
+                    <div class="form-content display-flex">
+                        <label class="label-form">Mot de passe</label>
+                        <input [(ngModel)]="password" name="password" type="password" placeholder="*****" required/>
+                    </div>
+                    <div class="section-connexion-links display-flex">
+                        <a>Mot de passe oublié ?</a>
+                        <button type="submit" class="button-form">Se connecter</button>
+                    </div>
+                </form>
+                <div class="line-decoration-green"></div>
+                <p class="text-decoration">Vous n'avez pas de compte ? <a routerLink="/register" class="link-green">Inscrivez-vous !</a></p>
+            </div>
+        </div>
+    </div>
+</div>

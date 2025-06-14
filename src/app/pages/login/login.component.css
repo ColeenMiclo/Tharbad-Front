@@ -1,0 +1,43 @@
+.section-login{
+    width: 100%;
+}
+
+.login-content{
+    width: 40%;
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto auto;
+    justify-content: center;
+}
+.line-decoration-green{
+    border-bottom: 1px solid #6A9A56;
+}
+
+/* form*/
+.button-form{
+    background-color: #84C26B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #0A140F;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+.form-content{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+.section-connexion-links{
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-connexion-links a:hover{
+    text-decoration: underline;
+    color: #6A9A56;
+}

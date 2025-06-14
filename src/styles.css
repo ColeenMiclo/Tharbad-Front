@@ -6,6 +6,7 @@
 body{
     font-family: 'Lato', 'Arial', sans-serif;
     margin: 0px;
+    background-color: #FCFCFC;
 }
 
 /* Wrappers */
@@ -29,6 +30,14 @@ body{
 }
 
 /* Titles */
+.title-login{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #6A9A56;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
 .h2{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -49,6 +58,11 @@ body{
     font-size: 0.875rem;
     text-transform: uppercase;
 }
+.green-button:hover{
+    background-color: #DEEED8;
+    color: #0A140F;
+}
+
 .test-button{
     background-color: #FCFCFC;
     font-family: 'Lato', sans-serif;
@@ -59,4 +73,101 @@ body{
     padding: 1.375rem 3.125rem;
     font-size: 0.875rem;
     text-transform: uppercase;
+}
+.test-button:hover{
+    background-color: #0A140F;
+    color: #FCFCFC;
+}
+
+.card-game-button-green{
+    background-color: #84C26B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #0A140F;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 0.8rem 3.125rem;
+}
+.card-game-button-green:hover{
+    background-color: #DEEED8;
+    color: #0A140F;
+}
+
+.card-game-button-pale-green{
+    background-color: #DEEED8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #0A140F;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 0.8rem 3.125rem;
+}
+.card-game-button-pale-green:hover{
+    background-color: #84C26B;
+    color: #0A140F;
+}
+
+.button-form{
+    background-color: #84C26B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #0A140F;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.button-form:hover{
+    background-color: #DEEED8;
+    color: #0A140F;
+}
+
+/* Display */
+
+.display-flex{
+    display: flex;
+}
+
+/* Icon */
+.star-icon{
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+/* Links */
+.link-green{
+    color: #6A9A56;
+    text-decoration: none;
+}
+.link-green:hover{
+    text-decoration: underline;
+}
+
+/* Input styles */
+
+input{
+    border-radius: 3.125rem;
+    border: 1px solid #84C26B;
+    padding: 1rem 1rem;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #6A9A56;
+}
+
+::placeholder{
+    color: #6A9A56;
+}
+
+/* list */
+
+ul{
+    color: #0A140F;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }

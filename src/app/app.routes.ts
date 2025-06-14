@@ -11,5 +11,6 @@ export const routes: Routes = [
     {path: 'register', component: RegisterComponent},
     {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
     {path: '**', redirectTo: ''},
+    {path: 'confirmation', loadComponent: () => import('./pages/confirmation/confirmation.component').then(m => m.ConfirmationComponent) }
 
 ];

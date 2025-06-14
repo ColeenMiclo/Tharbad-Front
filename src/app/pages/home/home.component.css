@@ -48,6 +48,38 @@
     color: #0A140F;
 }
 
+/* Card Game */
+.section-cards-game{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-game-collection{
+    border: none;
+    border-radius: 3.125rem;
+    box-shadow: rgba(100, 100, 111, 0.12) 15px 20px 30px 0px;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    width: 42%;
+}
+
+.card-game-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-game-opinions{
+    gap: 3rem;
+}
+
+.card-game-note, .card-game-number-gamers{
+    gap: 1rem;
+}
+
+
 /* section where to play */
 
 .section-where-to-play{

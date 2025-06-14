@@ -1,0 +1,23 @@
+.section-register {
+    width: 40%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;;
+}
+
+.form-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-content-button {
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.label-form {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}

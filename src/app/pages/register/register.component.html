@@ -1,1 +1,28 @@
-<p>register works!</p>
+<div class="page-wrapper">
+    <div class="main-wrapper">
+        <div class="section-register display-flex">
+            <h1 class="title-login">Créez votre compte</h1>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-content display-flex">
+                    <label class="label-form">Adresse Email</label>
+                    <input [(ngModel)]="email" name="email" placeholder="jeux.societe@email.fr" required/>
+                </div>
+                <div class="form-content display-flex">
+                    <label class="label-form">Mot de passe</label>
+                    <input [(ngModel)]="password" name="password" type="password" placeholder="*****" required/>
+                </div>
+                <div class="form-content display-flex">
+                    <label class="label-form">Confirmation du mot de passe</label>
+                    <input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" placeholder="*****" required/>
+                </div>
+                <div class="general-conditions display-flex">
+                    <!-- <input type="checkbox" [(ngModel)]="acceptTerms" name="acceptTerms" required/> -->
+                    <label class="label-checkbox">J'accepte les <a href="/terms" class="link-green">conditions générales d'utilisation</a></label>
+                </div>
+                <div class="form-content-button display-flex">
+                    <button type="submit" class="button-form">S'inscrire maintenant</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
