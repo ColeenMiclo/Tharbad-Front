@@ -13,18 +13,7 @@
     border-bottom: 1px solid #6A9A56;
 }
 
-/* form*/
-.button-form{
-    background-color: #84C26B;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    color: #0A140F;
-    border: none;
-    border-radius: 3.125rem;
-    padding: 1rem 3rem;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-}
+/* form */
 .form-content{
     flex-direction: column;
     width: 100%;

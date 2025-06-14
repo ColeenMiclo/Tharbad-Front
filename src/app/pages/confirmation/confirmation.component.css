@@ -1,0 +1,15 @@
+.section-confirmation{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;;
+}
+
+.green-text{
+    color: #6A9A56;
+}
+
+.confirmation-content-button {
+    align-items: center;
+    margin: 3rem auto;
+}

@@ -17,16 +17,29 @@ export class RegisterComponent {
   constructor(private authService: AuthService, private router: Router) { }
 
   onSubmit() {
-    this.authService.register({ email: this.email, password: this.password, confirmPassword: this.confirmPassword }).subscribe({
-      next: (res) => {
-        this.authService.saveToken(res.token);
-        this.router.navigate(['/confirmation']);
-        if (this.password !== this.confirmPassword) {
+    if (!this.email || !this.password || !this.confirmPassword) {
+        alert('Veuillez remplir tous les champs.');
+        return;
+    }
+
+    if (this.password !== this.confirmPassword) {
         alert('Les mots de passe ne correspondent pas.');
         return;
-        } 
-        this.router.navigate(['/login']);
-        console.log('Inscription réussie, vous pouvez maintenant vous connecter.');
+    } 
+
+    this.authService.register({ email: this.email, password: this.password }).subscribe({
+      next: (res) => {
+        console.log('Inscription réussie:', res);
+        this.router.navigate(['/confirmation']);
+      }, 
+        error: (err) => {
+        console.error('Erreur lors de l\'inscription:', err);
+
+        if (err.status === 409) {
+          alert('Un compte avec cet email existe déjà. Veuillez en utiliser un autre.')
+        } else {
+          alert('L\'inscription a échoué. Veuillez vérifier vos informations.');
+        }
       }
     });
   }
