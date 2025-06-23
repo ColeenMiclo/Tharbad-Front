@@ -23,15 +23,15 @@
                     Nouveautés
                 </button>
             </div>
-            <div class="section-cards-game">
-                <div class="card-game-collection">
+            <div *ngFor="let game of hotGames" class="section-cards-game">
+                <div class="card-game-collection display-flex">
                     <div class="card-game-image">
-                        <img src="assets/images/illustration-game.png" alt="Couverture du jeu">
+                        <img [src]="game.image" [alt]="game.name">
                     </div>
                     <div class="card-game-content">
                         <div class="card-game-description">
-                            <h3>Nom du jeu</h3>
-                            <p>Description du jeu de societe</p>
+                            <h3>{{ game.name }}</h3>
+                            <!-- <p>Description du jeu de societe</p> -->
                         </div>
                         <div class="card-game-opinions display-flex">
                             <div class="card-game-note display-flex">
@@ -41,30 +41,6 @@
                             </div>
                             <div class="card-game-number-gamers display-flex">
                                 <img src="assets/images/people-icon.svg" alt="People Icon">
-                                <p>plus de 267 joueurs</p>
-                            </div>
-                        </div>
-                        <button class="card-game-button-green">Ajouter à mes jeux</button>
-                        <button class="card-game-button-pale-green">En savoir plus</button>
-                    </div>
-                </div>
-                <div class="card-game-collection">
-                    <div class="card-game-image">
-                        <img src="assets/images/illustration-game.png" alt="Couverture du jeu">
-                    </div>
-                    <div class="card-game-content">
-                        <div class="card-game-description">
-                            <h3>Nom du jeu</h3>
-                            <p>Description du jeu de societe</p>
-                        </div>
-                        <div class="card-game-opinions display-flex">
-                            <div class="card-game-note display-flex">
-                                <img src="assets/images/star-note.svg" alt="Star Icon">
-                                <p>4.5</p>
-                                <p>121 notes</p>
-                            </div>
-                            <div class="card-game-number-gamers display-flex">
-                                <img src="assets/images/people-icon.svg" alt="People Icon" class="star-icon">
                                 <p>plus de 267 joueurs</p>
                             </div>
                         </div>

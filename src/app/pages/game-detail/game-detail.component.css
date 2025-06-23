@@ -1,0 +1,29 @@
+.card-game-detail {
+  width: 100%;
+  gap: 3rem;
+}
+
+.game-detail-header{
+    gap : 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.game-detail-content{
+    gap : 3rem;
+}
+.game-image{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.game-description h2{
+    margin: 0;
+}
+
+.header-info-cartridge{
+    background-color: #DEEED8;
+    padding: 0.5rem 2rem;
+    border-radius: 3.125rem;
+}

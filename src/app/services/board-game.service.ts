@@ -23,4 +23,8 @@ export class BoardGameService {
   getGameById(id: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/${id}`);
   }
+
+  getHotGames(): Observable<BoardGameDTO[]> {
+    return this.http.get<BoardGameDTO[]>(`${this.apiUrl}/hot`);
+  }
 }

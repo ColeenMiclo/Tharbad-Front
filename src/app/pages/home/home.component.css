@@ -51,7 +51,6 @@
 /* Card Game */
 .section-cards-game{
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -60,9 +59,7 @@
     border-radius: 3.125rem;
     box-shadow: rgba(100, 100, 111, 0.12) 15px 20px 30px 0px;
     padding: 2rem;
-    display: flex;
     gap: 3rem;
-    width: 42%;
 }
 
 .card-game-content{
