@@ -3,12 +3,13 @@ import { NavbarComponent } from "../../components/navbar/navbar.component";
 import { BoardGameDTO, BoardGameService } from "../../services/board-game.service";
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TruncatePipe } from "../../truncate.pipe";
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TruncatePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -166,8 +166,13 @@ input:focus{
 
 ul{
     color: #0A140F;
-    list-style: none;
-    text-decoration: none;
+    list-style: none!important;
+    text-decoration: none!important;
     padding: 0;
     margin: 0;
+}
+
+a{
+    color: #0A140F;
+    text-decoration: none;
 }

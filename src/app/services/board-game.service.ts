@@ -8,6 +8,16 @@ export interface BoardGameDTO {
   name: string;
   description: string;
   image: string;
+  minplayers: number;
+  maxplayers: number;
+  playingtime: number;
+  minage: number;
+  rating?: number;
+  votes?: number;
+  expansion: boolean;
+  mechanics: string[];
+  categories: string[];
+
 }
 
 @Injectable({

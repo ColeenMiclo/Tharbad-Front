@@ -11,41 +11,57 @@
             </div>
         </div>
         <div class="section-game-collection">
-            <h2>Explorez notre vaste collection de jeux de société</h2>
-            <div class="filter-options">
-                <button class="filter-icon">
-                    <img src="assets/images/filter-icon.svg" alt="Filter Icon">
-                </button>
-                <button class="filter-icon">
-                    Les + populaires
-                </button>
-                <button class="filter-icon">
-                    Nouveautés
-                </button>
+            <div class="section-game-card-header">
+                <h2>Explorez notre vaste collection de jeux de société</h2>
+                <div class="filter-options">
+                    <button class="filter-icon">
+                        <img src="assets/images/filter-icon.svg" alt="Filter Icon">
+                    </button>
+                    <button class="filter-icon">
+                        Les + populaires
+                    </button>
+                    <button class="filter-icon">
+                        Nouveautés
+                    </button>
+                </div>
             </div>
-            <div *ngFor="let game of hotGames" class="section-cards-game">
-                <div class="card-game-collection display-flex">
-                    <div class="card-game-image">
-                        <img [src]="game.image" [alt]="game.name">
-                    </div>
-                    <div class="card-game-content">
-                        <div class="card-game-description">
-                            <h3>{{ game.name }}</h3>
-                            <!-- <p>Description du jeu de societe</p> -->
-                        </div>
-                        <div class="card-game-opinions display-flex">
-                            <div class="card-game-note display-flex">
-                                <img src="assets/images/star-note.svg" alt="Star Icon" class="star-icon">
-                                <p>4.5</p>
-                                <p>121 notes</p>
+            <div class="section-cards-game-wrapper">
+                <div *ngFor="let game of hotGames | slice:0:4" class="section-cards-game">
+                    <div class="card-game-collection display-flex">
+                        <div class="card-game-wrapper display-flex">
+                            <div class="card-game-content">
+                                <div class="card-game-description display-flex">
+                                    <div class="card-game-image">
+                                        <img [src]="game.image" [alt]="game.name">
+                                    </div>
+                                    <div class="card-game-text">
+                                        <h3>{{ game.name }}</h3>
+                                        <div class="card-game-details display-flex">
+                                            <p>{{ game.description | truncate:300 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-game-opinions display-flex">
+                                    <div class="card-game-note display-flex">
+                                        <div class="card-game-note-section display-flex">
+                                            <img src="assets/images/star-note.svg" alt="Star Icon" class="star-icon">
+                                            <p>{{ game.rating | number:'1.1-1' }}</p>
+                                        </div>
+                                        <div class="card-game-note-section">
+                                            <p>{{ game.votes}} votes</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-game-number-gamers display-flex">
+                                        <img src="assets/images/people-icon.svg" alt="People Icon">
+                                        <p>plus de 267 joueurs</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-game-number-gamers display-flex">
-                                <img src="assets/images/people-icon.svg" alt="People Icon">
-                                <p>plus de 267 joueurs</p>
+                            <div class="card-game-buttons display-flex">
+                                <button class="card-game-button-green">Ajouter à mes jeux</button>
+                                <button class="card-game-button-pale-green">En savoir plus</button>
                             </div>
                         </div>
-                        <button class="card-game-button-green">Ajouter à mes jeux</button>
-                        <button class="card-game-button-pale-green">En savoir plus</button>
                     </div>
                 </div>
             </div>
@@ -55,20 +71,20 @@
                     <h2>Où jouer ?</h2>
                         <div class="cards-towns">
                             <div class="card-city">
-                                <img src="assets/icons/location-icon.svg" alt="Location Icon">
-                                <h3 class="title-city">Nom de la ville</h3>
+                                <img src="assets/images/city-toulouse.png" alt="Location Icon">
+                                <h3 class="title-city">Toulouse</h3>
                             </div>
                             <div class="card-city">
-                                <img src="assets/icons/location-icon.svg" alt="Location Icon">
-                                <h3 class="title-city">Nom de la ville</h3>
+                                <img src="assets/images/city-bordeaux.png" alt="Location Icon">
+                                <h3 class="title-city">Bordeaux</h3>
                             </div>
                             <div class="card-city">
-                                <img src="assets/icons/location-icon.svg" alt="Location Icon">
-                                <h3 class="title-city">Nom de la ville</h3>
+                                <img src="assets/images/city-nantes.png" alt="Location Icon">
+                                <h3 class="title-city">Nantes</h3>
                             </div>
                             <div class="card-city">
-                                <img src="assets/icons/location-icon.svg" alt="Location Icon">
-                                <h3 class="title-city">Nom de la ville</h3>
+                                <img src="assets/images/city-saint-jean-luz.png" alt="Location Icon">
+                                <h3 class="title-city">Saint-Jean-de-Luz</h3>
                             </div>
                         </div>
                 </div>
