@@ -1,0 +1,24 @@
+<div *ngIf="game" class="card-game-detail">
+  <div class="game-detail-header display-flex">
+    <div class="header-info-cartridge">
+      <p>Nombre de joueurs</p>
+    </div>
+    <div class="header-info-cartridge">
+      <p>Temps de jeu</p>
+    </div>
+    <div class="header-info-cartridge">
+      <p>Age</p>
+    </div>
+    <div class="header-info-cartridge">
+      <p>Categorie</p>
+    </div>
+  </div>
+  <div class="game-detail-content display-flex">
+    <img [src]="game.image" alt="{{ game.name }}" class="game-image"/>
+    <div class="game-description">
+      <h2>{{ game.name }}</h2>
+      <h3>Description</h3>
+      <p>{{ game.description }}</p>
+    </div>
+  </div>
+</div>

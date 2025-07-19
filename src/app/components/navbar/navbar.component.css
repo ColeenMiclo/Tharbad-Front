@@ -7,9 +7,9 @@
 }
 
 .navbar ul{
-    color: #0A140F;
+    color: #0A140F!important;
     display: flex;
-    text-decoration: none;
+    text-decoration: none!important;
     width: 80%;
     list-style: none;
     margin: 0 auto;
